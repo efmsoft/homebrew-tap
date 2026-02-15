@@ -10,10 +10,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Tap this repository (local tap)
+        run: |
+          brew tap efmsoft/tap "$GITHUB_WORKSPACE"
+
       - name: Install formula (build from source)
         run: |
-          brew install --build-from-source ./Formula/logme.rb
+          brew install --build-from-source efmsoft/tap/logme
 
       - name: Run formula test
         run: |
-          brew test logme
+          brew test efmsoft/tap/logme
