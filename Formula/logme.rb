@@ -34,7 +34,7 @@ class Logme < Formula
       }
     CPP
 
-    system ENV.cxx, "test.cpp", "-std=c++17", "-I#{include}", "-L#{lib}", "-llogme", "-o", "test"
+    system ENV.cxx, "test.cpp", "-std=c++20", "-I#{include}", "-L#{lib}", "-llogme", "-o", "test"
     system "./test"
   end
 end
