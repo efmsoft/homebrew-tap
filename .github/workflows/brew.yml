@@ -1,0 +1,19 @@
+name: brew
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install formula (build from source)
+        run: |
+          brew install --build-from-source ./Formula/logme.rb
+
+      - name: Run formula test
+        run: |
+          brew test logme
