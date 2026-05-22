@@ -1,8 +1,8 @@
 class Logme < Formula
   desc "Lightweight C/C++ logging framework with channels, routing, and VT100 colors"
   homepage "https://github.com/efmsoft/logme"
-  url "https://github.com/efmsoft/logme/archive/refs/tags/v2.4.10.tar.gz"
-  sha256 "4cdc715b30320a342680b9222ada4ef672eccd8f44dbe835d718bec3e3f11471"
+  url "https://github.com/efmsoft/logme/archive/refs/tags/v2.4.17.tar.gz"
+  sha256 "3d83423224ac33f768c6ed0ed8ecf2345b760629c58bbb7e5bea428e3bb49b94"
   license "Apache-2.0"
 
   head "https://github.com/efmsoft/logme.git", branch: "master"
